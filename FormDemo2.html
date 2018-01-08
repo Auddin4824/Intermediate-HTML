@@ -26,13 +26,19 @@
     <!-- Alternate way! -->
     <form>
         <label for="username">Username:</label>
-        <input id="username" type="text" placeholder="Username">
+        <input id="username" type="text" placeholder="Username" required>
 
 <!-- It would look the same without the for and id atribute,
 but they connect the data together! -->
 
+<!-- Present Validation - The require atribute make sure the slot isn't left blank. 
+Type Validation - Email-->
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Email" required>
+
         <label for="password">Password:</label>
-        <input id="password" type="password" placeholder="Password">
+        <input id="password" type="password" placeholder="Password" required>
 
         <input type="submit">
     </form>
