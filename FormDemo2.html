@@ -40,6 +40,38 @@ Type Validation - Email-->
         <label for="password">Password:</label>
         <input id="password" type="password" placeholder="Password" required>
 
+        <!-- Radio Buttons -->
+        <fieldset>
+            <p>Do you like cats or dogs?</p>
+
+            <!-- If there isn't a value for an input, it will be treated like a boolen and become true/on. -->
+            <label for="cats">Cats:</label>
+            <input name="pet" id="cats" type="radio" value="CATS">
+
+            <label for="dogs">Dogs:</label>
+            <input name="pet" id="dogs" type="radio" value="DOGS">
+
+
+            <!-- Select Tags -->
+            <p>What is your favorite color?</p>
+
+            <!-- The option element are pass up to the atribute value/name in select element.  -->
+            <select name="color">
+                <option value="RED">Red</option>
+                <option value="ORANGE">Orange</option>
+                <option value="YELLOW">Yellow</option>
+            </select>
+
+            <!-- textarea tag -->
+            <p>Why did you those choices?</p>
+
+            <!-- Textarea are like input text, but hold more data -->
+            <textarea name="Response" rows="5" cols="50">Write your respond here. This is optional and not required.</textarea>
+
+        </fieldset>
+
+        <!-- Even though you have a button, 
+        it will be treated like the submit button if it the last item on your form -->
         <input type="submit">
     </form>
 
