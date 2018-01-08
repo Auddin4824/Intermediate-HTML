@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Form Demo</title>
+    </head>
+    <body>
+
+        <h1>Login</h1>
+
+        <!-- Action - Where the form send data to - Default: Same location/Refresh -->
+        <!-- Method - What HTTP method (get/post) - Default: Get --> 
+
+        <form action="http://wikipedia.org" method="GET">
+            <input name="Username" type="text" placeholder="Username">
+            <!--<input type="color"> Sample input atribute
+            <input type="radio">-->
+            <input name="Password   " type="password" placeholder="Password">
+            <!--button>submit</button>--> <!-- Same thing as input -->
+            <input type="submit">
+        </form>
+
+    </body>
+</html>
