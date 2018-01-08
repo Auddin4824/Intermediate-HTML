@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form Demo 2</title>
+</head>
+<body>
+    
+    <h1>Login</h1>
+
+    <!-- Action - Where the form send data to - Default: Same location/Refresh -->
+    <!-- Method - What HTTP method (get/post) - Default: Get -->
+
+    <!--<form>
+        <label>
+            Username:
+            <input type="text" placeholder="Username">
+        </label>
+        <label>
+            Password
+            <input type="password" placeholder="Password">
+        </label>
+            <input type="submit">
+    </form>-->
+
+    <!-- Alternate way! -->
+    <form>
+        <label for="username">Username:</label>
+        <input id="username" type="text" placeholder="Username">
+
+<!-- It would look the same without the for and id atribute,
+but they connect the data together! -->
+
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="Password">
+
+        <input type="submit">
+    </form>
+
+</body>
+</html>
