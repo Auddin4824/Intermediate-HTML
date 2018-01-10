@@ -25,17 +25,21 @@
 
                 <br>
                 
+                <!-- Don't used minlength and maxlength. Not that supported with browsers! -->
+                <!-- Used pattern atribute instead -->
                 <label id="Email">Email:</label>
                 <input type="email" id="Email" placeholder="someone@gmail.com" required>
                 <label id="Password">Password:</label>
-                <input type="password" id="Password" minlength="5" maxlength="10" size="10" required>
+                <input type="password" id="Password" pattern=".{5,10}" placeholder="Your Password" required title="5 to 10 characters">
 
                 <br>
                 
                 <!-- I know there an input date attribute, but the instructor wanted a dropdown list -->
                 <!-- I couldn't leave it incomplete so I finish it! -->
+                <!-- Use value 0 in dropdown in order to disable autoselect -->
                 <label>
                     <select name="Month">
+                        <option value="0" selected disabled>Month</option>
                         <option>January</option>
                         <option>February</option>
                         <option>March</option>
@@ -51,6 +55,7 @@
                     </select>
 
                     <select name="Day">
+                        <option value="0" selected disabled>Day</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -85,6 +90,7 @@
                     </select>
 
                     <select name="Year">
+                        <option value="0" selected disabled>Year</option>
                         <option>1940</option>
                         <option>1941</option>
                         <option>1942</option>
@@ -176,7 +182,7 @@
 
                 <br>
 
-                <input type="submit">
+                <input type="submit" value="Submit">
             </form>
         </fieldset>
        
